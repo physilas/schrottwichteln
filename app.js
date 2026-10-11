@@ -3,7 +3,7 @@
 // Niemand zieht sich selbst oder den eigenen Partner.
 const PEOPLE = [
   { name: "Janika", article: "die", partner: "Silas", recipient: "Tim", answer: "Mit der doppelt dicken Winterdecke.", question: "Wie übersteht man die super heißen Sommernächte, in denen die Wohnung kaum runterkühlt?" },
-  { name: "Silas", article: "der", partner: "Janika", recipient: "Mathilda", answer: "2e30 kg", question: "Masse <s>von Toni</s> <strong>der Sonne</strong> in wissenschaftlicher Notation:" },
+  { name: "Silas", article: "der", partner: "Janika", recipient: "Mathilda", answer: "2e30 kg", question: "Masse von <s>Toni</s> <strong>der Sonne</strong> in wissenschaftlicher Notation:" },
   { name: "Tim", article: "der", partner: "Mathilda", recipient: "Johanna", answer: "Tim, hast du noch einen Termin?", question: "Die einzig richtige Frage beim Übergang von Einsteinstraße auf die A96?" },
   { name: "Mathilda", article: "die", partner: "Tim", recipient: "Toni", answer: "SO schön, dass DU da bist!", question: "Wie begrüßt man seine Leute bei einem ICF Couples Event am besten?" },
   { name: "Toni", article: "der", partner: "Johanna", recipient: "Silas", answer: "Gleitgel", question: "Was wäre das perfekte Willkommensgeschenk für die Paare bei einem Couples Weekend und auch sonst immer und überall eine sehr gute Option?" },
