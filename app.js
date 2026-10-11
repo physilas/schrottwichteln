@@ -35,7 +35,8 @@ function renderPeople() {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "person-button";
-    button.innerHTML = `<span class="person-name">${person.name}</span><span class="person-meta">privates Los öffnen</span>`;
+    const overviewName = person.name === "Tim" ? "Tom" : person.name;
+    button.innerHTML = `<span class="person-name">${overviewName}</span><span class="person-meta">privates Los öffnen</span>`;
     button.addEventListener("click", () => selectPerson(person));
     grid.append(button);
   });
