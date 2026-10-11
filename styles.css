@@ -35,7 +35,10 @@ body::before {
 .page-shell { width: min(1040px, calc(100% - 36px)); margin: 0 auto; padding: 55px 0 38px; }
 .hero { max-width: 730px; position: relative; }
 .eyebrow, .section-kicker { margin: 0 0 10px; color: var(--red); font: 500 12px/1 "DM Mono", monospace; letter-spacing: .08em; text-transform: uppercase; }
-.rating { display: inline-flex; gap: .04em; color: var(--yellow); font-size: 3.8em; line-height: .25; letter-spacing: 0; vertical-align: middle; }
+.hero-meta { display: flex; align-items: flex-start; flex-direction: column; gap: 9px; margin-bottom: 17px; }
+.hero-meta > span:first-child { white-space: nowrap; }
+.service-stamp { display: inline-block; padding: 6px 10px 5px; border: 2px solid var(--red); border-radius: 3px; color: var(--paper); background: var(--red); box-shadow: 3px 3px 0 var(--yellow); font: 800 1rem/.9 "Fraunces", serif; letter-spacing: .01em; text-transform: none; transform: rotate(-1.5deg); }
+.rating { display: inline-flex; gap: .04em; color: var(--yellow); font-size: 3.1em; line-height: .25; letter-spacing: 0; vertical-align: middle; }
 .empty-stars { color: rgba(152, 65, 84, .38); }
 h1, h2, h3 { margin: 0; font-family: "Fraunces", serif; line-height: .95; }
 h1 { font-size: clamp(3.7rem, 9vw, 7.3rem); letter-spacing: -.07em; }
