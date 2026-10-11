@@ -89,13 +89,21 @@ questionForm.addEventListener("submit", (event) => {
 
 function openTicket() {
   questionForm.classList.add("hidden");
+  // Erst unsichtbar layouten und die Rubbelfläche vollständig zeichnen.
+  // So kann der Empfängername auch bei träger Darstellung niemals aufblitzen.
+  scratcher.classList.add("is-preparing");
   scratcher.classList.remove("hidden");
   revealActions.classList.add("hidden");
   isRevealed = false;
+  canvas.style.display = "block";
+  canvas.style.opacity = "1";
+  resetScratchSurface();
   recipientName.textContent = selectedPerson.recipient;
   ticketMessage.textContent = `Hallo ${selectedPerson.name}: Bitte besorge etwas, das ${selectedPerson.recipient} gleichzeitig verwirrt und zum Lachen bringt.`;
-  scratcher.scrollIntoView({ behavior: "smooth", block: "center" });
-  window.setTimeout(resetScratchSurface, 250);
+  requestAnimationFrame(() => {
+    scratcher.classList.remove("is-preparing");
+    scratcher.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
 }
 
 function resetScratchSurface() {

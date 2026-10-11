@@ -82,7 +82,7 @@ code { padding: 1px 4px; border-radius: 3px; background: rgba(0,0,0,.2); font-fa
 .big-button { padding: 13px 18px; background: var(--yellow); color: var(--ink); font-size: 1rem; }
 .big-button span { margin-left: 7px; font-size: 1.3em; }.big-button:hover, .secondary-button:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--ink); }
 
-.scratcher { max-width: 740px; margin: 53px auto 0; text-align: center; }.scratcher h2 { margin-bottom: 9px; }.scratch-hint { margin: 0 0 18px; color: #5e655e; font-weight: 700; }
+.scratcher { max-width: 740px; margin: 53px auto 0; text-align: center; }.scratcher.is-preparing { visibility: hidden; }.scratcher h2 { margin-bottom: 9px; }.scratch-hint { margin: 0 0 18px; color: #5e655e; font-weight: 700; }
 .ticket { position: relative; overflow: hidden; min-height: 330px; border: 3px solid var(--ink); border-radius: 12px; background: var(--paper); box-shadow: 7px 8px 0 rgba(28, 64, 56, .7); }
 .ticket::before, .ticket::after { content: ""; position: absolute; left: -8px; right: -8px; height: 13px; z-index: 0; background: radial-gradient(circle at 7px 0, transparent 8px, var(--cream) 8.5px); background-size: 20px 12px; }.ticket::before { top: 0; }.ticket::after { bottom: 0; transform: rotate(180deg); }
 .ticket-top { position: relative; z-index: 1; display: flex; justify-content: space-between; padding: 16px 22px; color: var(--paper); background: var(--red); font: 500 11px "DM Mono", monospace; letter-spacing: .07em; }.ticket-top span { color: #ffd978; }
