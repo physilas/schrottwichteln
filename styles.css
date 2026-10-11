@@ -41,7 +41,7 @@ body::before {
 .customer-rating { display: inline-flex; align-items: center; gap: .25em; }
 .service-stamp { width: 100%; padding-top: 7px; border-top: 1px dashed rgba(255,255,255,.45); color: var(--yellow); font: 500 .95em "DM Mono", monospace; letter-spacing: .02em; text-transform: none; }
 .rating { display: inline-flex; gap: .04em; color: var(--yellow); font-size: 1.65em; line-height: .25; letter-spacing: 0; vertical-align: middle; }
-.empty-stars { color: transparent; -webkit-text-stroke: 1px var(--yellow); paint-order: stroke fill; }
+.empty-stars { color: var(--yellow); -webkit-text-stroke: 0; }
 h1, h2, h3 { margin: 0; font-family: "Fraunces", serif; line-height: .95; }
 h1 { font-size: clamp(3.7rem, 9vw, 7.3rem); letter-spacing: -.07em; }
 h1 em { color: var(--red); font-style: normal; }
