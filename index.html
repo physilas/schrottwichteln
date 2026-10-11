@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#9a1720" />
+    <meta name="description" content="Die offizielle, leicht fragwürdige Schrottwichtel-Zentrale." />
+    <title>Schrottwichtel-Zentrale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="snow" aria-hidden="true"></div>
+    <div class="junk junk--lamp" aria-hidden="true">💡</div>
+    <div class="junk junk--sock" aria-hidden="true">🧦</div>
+    <div class="junk junk--toaster" aria-hidden="true">🍞</div>
+    <div class="junk junk--tape" aria-hidden="true">〰</div>
+
+    <main class="page-shell">
+      <section class="hero">
+        <p class="eyebrow">Nordpol · Sperrmüllabteilung · seit ungefähr gerade eben</p>
+        <h1>Die große<br /><em>Schrottwichtel</em>-Ziehung</h1>
+        <p class="hero-copy">Finde heraus, wen du mit einem Geschenk von zweifelhaftem emotionalem Wert beglücken darfst.</p>
+        <div class="warning-label"><span>⚠</span> Bitte keine funktionsfähigen Gegenstände verschenken.</div>
+      </section>
+
+      <section class="rules-card" aria-labelledby="so-gehts">
+        <div class="card-sticker">✨ total<br />offiziell</div>
+        <p class="section-kicker" id="so-gehts">So geht's</p>
+        <ol class="steps">
+          <li><span>01</span> Such deinen Namen aus.</li>
+          <li><span>02</span> Beantworte die sehr geheime Frage.</li>
+          <li><span>03</span> Rubbel dein Los frei. Oho!</li>
+        </ol>
+        <p class="fine-print">Eine Ziehung pro Person, bitte. Am besten gebt ihr das Gerät danach direkt weiter – wie einen viel zu heißen Kartoffelteller.</p>
+      </section>
+
+      <section class="draw-area" aria-labelledby="zieh-title">
+        <div class="draw-heading">
+          <div>
+            <p class="section-kicker">Ziehungsmaschine 3000</p>
+            <h2 id="zieh-title">Wer traut sich?</h2>
+          </div>
+          <div class="status-pill" id="draw-status" aria-live="polite">6 Lose warten</div>
+        </div>
+
+        <div class="people-grid" id="people-grid" aria-label="Teilnehmende"></div>
+
+        <form class="question-card hidden" id="question-form" novalidate>
+          <button class="back-button" type="button" id="back-button">← andere Person</button>
+          <p class="section-kicker">Identitätsprüfung</p>
+          <h3 id="question-name">Bist du wirklich du?</h3>
+          <label for="secret-answer" id="question-label">Deine Geheimfrage</label>
+          <input id="secret-answer" type="text" autocomplete="off" placeholder="Antwort eingeben …" />
+          <p class="form-note">Diese Fragen sind Platzhalter – sie lassen sich später ganz einfach in <code>app.js</code> austauschen.</p>
+          <p class="form-error" id="form-error" aria-live="polite"></p>
+          <button class="big-button" type="submit">Okay, ich bin's. Los rubbeln! <span>→</span></button>
+        </form>
+      </section>
+
+      <section class="scratcher hidden" id="scratcher" aria-labelledby="scratch-title">
+        <p class="section-kicker">Dein hochoffizielles Los</p>
+        <h2 id="scratch-title">Rubbel dich ins Unglück</h2>
+        <p class="scratch-hint" id="scratch-hint">Mit Maus oder Finger die silberne Fläche wegrubbeln.</p>
+        <div class="ticket" id="ticket">
+          <div class="ticket-top">SCHROTTWICHTEL-LOS <span>★ Nr. 0815 ★</span></div>
+          <div class="ticket-content">
+            <div class="ticket-mini">Du beschenkst:</div>
+            <div class="recipient" id="recipient-name">???</div>
+            <div class="ticket-message" id="ticket-message">Ein Geschenk, das sich nicht erklären lässt, wartet auf euch.</div>
+            <div class="ticket-bottom">Gültig bis der Tannenbaum nadelt · Umtausch ausgeschlossen</div>
+          </div>
+          <canvas id="scratch-canvas" aria-label="Rubbelfläche"></canvas>
+        </div>
+        <div class="reveal-actions hidden" id="reveal-actions">
+          <p>🎄 Glückwunsch! Jetzt wird kreativ geschrottet.</p>
+          <button class="secondary-button" id="next-person" type="button">Gerät weiterreichen →</button>
+        </div>
+      </section>
+
+      <section class="legal-junk">
+        <span>♻️</span>
+        <p><strong>Wichtiger Hinweis:</strong> Niemand zieht sich selbst. Und niemand zieht den eigenen Lieblingsmenschen. Die romantische Komponente bleibt also verschont – der Ramsch nicht.</p>
+      </section>
+    </main>
+
+    <footer>Mit Liebe, Lametta und drei fragwürdigen Kabeln zusammengetackert.</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
