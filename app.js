@@ -118,9 +118,9 @@ function resetScratchSurface() {
   context.fillStyle = "rgba(255,255,255,.42)";
   context.font = "bold 15px DM Mono, monospace";
   context.textAlign = "center";
-  context.fillText("✦ HIER RUBBELN, DU KREATIVER CHAOS-ELF ✦", rect.width / 2, rect.height / 2);
+  context.fillText("✦ RUBBEL DICH INS „GLÜCK“ ✦", rect.width / 2, rect.height / 2);
   context.globalCompositeOperation = "destination-out";
-  scratchHint.textContent = "Mit Maus oder Finger die silberne Fläche wegrubbeln.";
+  scratchHint.textContent = "Rubbel dich ins „Glück“!";
 }
 
 function positionFor(event) {
