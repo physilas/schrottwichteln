@@ -35,7 +35,8 @@ body::before {
 .page-shell { width: min(1040px, calc(100% - 36px)); margin: 0 auto; padding: 55px 0 38px; }
 .hero { max-width: 730px; position: relative; }
 .eyebrow, .section-kicker { margin: 0 0 10px; color: var(--red); font: 500 12px/1 "DM Mono", monospace; letter-spacing: .08em; text-transform: uppercase; }
-.rating { display: inline-block; color: var(--yellow); font-size: 1.15em; line-height: .8; letter-spacing: 0; vertical-align: -1px; }
+.rating { display: inline-flex; gap: .04em; color: var(--yellow); font-size: 2em; line-height: .5; letter-spacing: 0; vertical-align: -.22em; }
+.empty-stars { color: rgba(152, 65, 84, .38); }
 h1, h2, h3 { margin: 0; font-family: "Fraunces", serif; line-height: .95; }
 h1 { font-size: clamp(3.7rem, 9vw, 7.3rem); letter-spacing: -.07em; }
 h1 em { color: var(--red); font-style: normal; }
